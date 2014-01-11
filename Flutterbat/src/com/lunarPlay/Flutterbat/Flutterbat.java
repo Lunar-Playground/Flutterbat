@@ -1,6 +1,7 @@
 package com.lunarPlay.Flutterbat;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.graphics.Color;
 import com.lunarPlay.Flutterbat.Screens.SplashScreen;
 
 public class Flutterbat extends Game {
@@ -10,13 +11,18 @@ public class Flutterbat extends Game {
 	public static final String COMPANY = "Lunar Playground";
 	public static final int YEAR_RELEASE = 2014;
 
+	public static final String LOG = "Flutterbat";
+	
 	public static final int APP_WIDTH = 960;
 	public static final int APP_HEIGHT = 640;
 	public static final boolean RESIZABLE = false;
 	
+	public static final Color FONT_COLOR_LEGAL = new Color(1f, 1f, 1f, 1f);
+	public static final Color FONT_COLOR_BUTTON = new Color(1f, 0.6f, 0.1f, 1f);
+	
 	@Override
 	public void create() {		
-		this.setScreen(new SplashScreen(this));
+		setScreen(new SplashScreen(this));
 	}
 
 	@Override
