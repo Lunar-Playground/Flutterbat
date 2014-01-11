@@ -1,0 +1,29 @@
+
+Buttons.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ButtonHover
+  rotate: false
+  xy: 1, 1
+  size: 34, 34
+  split: 16, 16, 15, 17
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+ButtonNormal
+  rotate: false
+  xy: 37, 1
+  size: 34, 34
+  split: 16, 16, 15, 17
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+ButtonPressed
+  rotate: false
+  xy: 73, 1
+  size: 34, 34
+  split: 16, 16, 17, 15
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
