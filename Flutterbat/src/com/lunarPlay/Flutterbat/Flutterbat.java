@@ -7,7 +7,7 @@ import com.lunarPlay.Flutterbat.Screens.SplashScreen;
 public class Flutterbat extends Game {
 
 	public static final String NAME = "Flutter Bat";
-	public static final String VERSION = "0.0.0.01 Pre-Alpha";
+	public static final String VERSION = "0.0.01 Pre-Alpha";
 	public static final String COMPANY = "Lunar Playground";
 	public static final int YEAR_RELEASE = 2014;
 

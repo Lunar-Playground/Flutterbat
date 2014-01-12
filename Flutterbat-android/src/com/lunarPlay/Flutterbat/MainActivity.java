@@ -4,10 +4,10 @@ package com.lunarPlay.Flutterbat;
 //
 //import com.badlogic.gdx.backends.android.AndroidApplication;
 //import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-
-public class MainActivity /* extends AndroidApplication */ {
-	
-		
+//
+//public class MainActivity /* extends AndroidApplication */ {
+//	
+//		
 	
 //    @Override
 //    public void onCreate(Bundle savedInstanceState) {
@@ -18,4 +18,4 @@ public class MainActivity /* extends AndroidApplication */ {
 //        
 //        initialize(new Flutterbat(), cfg);
 //    }
-}
+//}

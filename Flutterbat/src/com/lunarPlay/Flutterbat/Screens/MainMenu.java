@@ -184,7 +184,7 @@ public class MainMenu implements Screen {
 	}
 
 	protected void buttonOptions() {
-		
+		game.setScreen(new OptionsScreen(game));
 	}
 
 	protected void buttonLoad() {
