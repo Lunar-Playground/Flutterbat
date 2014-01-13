@@ -14,8 +14,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.lunarPlay.Flutterbat.Flutterbat;
 
-public class SaveSelectScreen implements Screen {
-
+public class OptionsScreen implements Screen {
+	
 	protected Flutterbat game;
 	protected SpriteBatch batch;
 	protected TextureAtlas atlas;
@@ -27,11 +27,10 @@ public class SaveSelectScreen implements Screen {
 	protected TextButton bBack;
 	
 	/**
-	 * TODO: Add Game Save Data Loader Script 
-	 * <p/> Find file - Read file - Process file
+	 * TODO: Add Options Script
 	 * @param game
 	 */
-	public SaveSelectScreen(Flutterbat game) {
+	public OptionsScreen(Flutterbat game) {
 		this.game = game;
 	}
 	
@@ -116,7 +115,7 @@ public class SaveSelectScreen implements Screen {
 	public void clear() {
 		bBack.clear();
 	}
-	
+
 	@Override
 	public void dispose() {
 		batch.dispose();

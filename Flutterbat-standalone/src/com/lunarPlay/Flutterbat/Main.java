@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = Flutterbat.NAME + " - " + Flutterbat.COMPANY;
-		cfg.useGL20 = false;
+		cfg.useGL20 = Flutterbat.USEGL20;
 		cfg.width = Flutterbat.APP_WIDTH;
 		cfg.height = Flutterbat.APP_HEIGHT;
 		cfg.resizable = Flutterbat.RESIZABLE;

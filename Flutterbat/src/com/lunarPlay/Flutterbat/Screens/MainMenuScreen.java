@@ -16,7 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.lunarPlay.Flutterbat.Flutterbat;
 
-public class MainMenu implements Screen {
+public class MainMenuScreen implements Screen {
 
 	protected Flutterbat game;
 	protected SpriteBatch batch;
@@ -24,13 +24,9 @@ public class MainMenu implements Screen {
 	protected Stage stage;
 	protected Skin skin;
 
-	/**
-	 * Button Font
-	 */
+	/** Button Font */
 	protected BitmapFont bFont;
-	/**
-	 * Label Font
-	 */
+	/** Label Font */
 	protected BitmapFont lFont;
 	
 	protected TextButton bStart;
@@ -42,7 +38,7 @@ public class MainMenu implements Screen {
 	protected Label lLegal;
 	protected Label lVersion;
 	
-	public MainMenu(Flutterbat game) {
+	public MainMenuScreen(Flutterbat game) {
 		this.game = game;
 	}
 	
@@ -82,7 +78,8 @@ public class MainMenu implements Screen {
 		// Style //
 
 		// Label //
-		if(lLegal == null) { lLegal = new Label("Programmed by NorthernSprint", lStyle); }
+		if(lLegal == null) { lLegal = new Label(Flutterbat.COMPANY + " " + Flutterbat.YEAR_RELEASE, 
+				lStyle); }
 		lLegal.setX(5);
 		lLegal.setY(5);
 		
@@ -185,10 +182,12 @@ public class MainMenu implements Screen {
 
 	protected void buttonOptions() {
 		game.setScreen(new OptionsScreen(game));
+		this.clear();
 	}
 
 	protected void buttonLoad() {
 		game.setScreen(new SaveSelectScreen(game));
+		this.clear();
 	}
 
 	protected void buttonContinue() {
@@ -196,7 +195,8 @@ public class MainMenu implements Screen {
 	}
 
 	protected void buttonStart() {
-		
+		game.setScreen(new GameScreen(game));
+		this.clear();
 	}
 
 	@Override
@@ -224,14 +224,16 @@ public class MainMenu implements Screen {
 		
 	}
 
-	@Override
-	public void dispose() {
+	public void clear() {
 		bStart.clear();
 		bContinue.clear();
 		bLoad.clear();
 		bOptions.clear();
 		bQuit.clear();
-		
+	}
+	
+	@Override
+	public void dispose() {
 		batch.dispose();
 		atlas.dispose();
 		skin.dispose();
