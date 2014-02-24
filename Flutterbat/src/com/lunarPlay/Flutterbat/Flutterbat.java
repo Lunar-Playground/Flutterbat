@@ -2,7 +2,6 @@ package com.lunarPlay.Flutterbat;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Color;
-import com.lunarPlay.Flutterbat.Screens.GameScreen;
 import com.lunarPlay.Flutterbat.Screens.SplashScreen;
 
 public class Flutterbat extends Game {
@@ -21,16 +20,12 @@ public class Flutterbat extends Game {
 	public static final boolean USEGL20 = true;
 	public static final boolean RESIZABLE = false;
 	
-	public static final Color FONT_COLOR_LEGAL = new Color(1f, 1f, 1f, 1f);
+	public static final Color FONT_COLOR_LEGAL = Color.WHITE;
 	public static final Color FONT_COLOR_BUTTON = new Color(1f, 0.6f, 0.1f, 1f);
 	
 	@Override
 	public void create() {
-		if (DEBUG) {
-			setScreen(new GameScreen(this));
-		} else {
-			setScreen(new SplashScreen(this));
-		}
+		setScreen(new SplashScreen(this));
 	}
 
 	@Override
